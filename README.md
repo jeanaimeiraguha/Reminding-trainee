@@ -1,6 +1,7 @@
 # 📦 PHP CRUD Tutorial – Beginner Friendly
 
-This repository contains a simple **PHP CRUD (Create, Read, Update, Delete)** application. It was created as a practical learning tool to train my friend on the fundamentals of PHP and MySQL for backend development.
+This repository contains a simple **PHP CRUD (Create, Read, Update, Delete)** application.
+It was created as a practical learning tool to train my friend on the fundamentals of PHP and MySQL for backend development.
 
 ## 🛠️ Features
 
