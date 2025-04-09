@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
         $username = $row['username'];
-        $password = $row['password'];
+        $Password = $row['Password'];
     } else {
         echo "User not found.";
         exit();
@@ -21,8 +21,8 @@ if (isset($_GET['id'])) {
 }
 
 if (isset($_POST['update'])) {
-    $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
+    $username = $_POST['username'];
+    $password = $_POST['password'];
     $id = $_POST['id'];
 
     if (empty($username)) {
@@ -32,7 +32,7 @@ if (isset($_POST['update'])) {
     } elseif (strlen($password) < 8) {
         echo "<script>alert('Password must be at least 8 characters long');</script>";
     } else {
-        $update = mysqli_query($conn, "UPDATE users SET username='$username', password='$password' WHERE id=$id");
+        $update = mysqli_query($conn, "UPDATE users SET username='$username', Password='$Password' WHERE id=$id");
 
         if ($update) {
             header("Location: select.php");
