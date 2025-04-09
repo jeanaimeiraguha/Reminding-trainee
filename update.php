@@ -1,7 +1,3 @@
-//UPDATE FILE IS COMING SOON
-//Let's  get relax
-
-
 
 <?php
 include('conn.php');
